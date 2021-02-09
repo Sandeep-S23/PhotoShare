@@ -1,0 +1,13 @@
+{% extends 'photos/base.html' %}
+    {% block content  %}
+  		<div class="row jestify-content-center">
+  			<div class="col">
+  				<a class="btn btn-dark my-3" href="{% url 'gallery' %}" role="button">Back</a>
+  				<div style="height: 90vh">
+  					<img style="max-height: 100%; max-width: 100%" src="{{ photo.image.url }}">
+  					<p>{{ photo.description }}</p>
+  				</div>
+
+  			</div>
+  		</div>
+    {% endblock %}  
